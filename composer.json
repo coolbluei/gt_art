@@ -48,7 +48,6 @@
         "drupal/layout_builder_restrictions": "^2.7",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_upgrade": "^4.0",
-        "drupal/name": "^1.0@RC",
         "drupal/pathauto": "^1.8",
         "drupal/quickedit": "^1.0",
         "drupal/rdf": "^2.0",
