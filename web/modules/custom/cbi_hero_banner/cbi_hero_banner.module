@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cbi_hero_banner_theme() {
+  return [
+    'hero_block' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+    'field__field_text' => [
+      'template' => 'field--field-text',
+      'base hook' => 'field'
+    ],
+    'paragraph__image_with_text' => [
+      'template' => 'paragraph--image-with-text',
+      'base hook' => 'paragraph'
+    ]
+  ];
+}

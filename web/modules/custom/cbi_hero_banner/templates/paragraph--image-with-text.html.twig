@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Theme override for a paragraph with image and text.
+ */
+#}
+{%
+  set classes = [
+    'hero_block__container',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div?>
+{% endblock paragraph %}

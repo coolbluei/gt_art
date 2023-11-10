@@ -1,0 +1,4 @@
+name: CBI Hero Banner
+type: module
+description: 'Provides a hero banner'
+core_version_requirement: ^9.3 || ^10
