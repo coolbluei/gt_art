@@ -1,0 +1,17 @@
+uuid: 4f13bd01-6600-4d96-8732-92722d188f0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Art Installation'
+type: art_installation
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,34 @@
+uuid: d27ae3c8-8427-47f3-896b-7fd6100b636f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.art_installation.body
+    - field.field.node.art_installation.field_category
+    - field.field.node.art_installation.field_media
+    - node.type.art_installation
+  module:
+    - text
+    - user
+id: node.art_installation.teaser
+targetEntityType: node
+bundle: art_installation
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  field_media: true

@@ -1,0 +1,24 @@
+uuid: 6e28f90c-9d54-4443-810a-e55b72129c94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.art_installation
+  module:
+    - text
+id: node.art_installation.body
+field_name: body
+entity_type: node
+bundle: art_installation
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

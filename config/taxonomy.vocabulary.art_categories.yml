@@ -1,0 +1,8 @@
+uuid: a39f1f5e-cba8-40fb-acab-e62ddd975a23
+langcode: en
+status: true
+dependencies: {  }
+name: 'Art Categories'
+vid: art_categories
+description: ''
+weight: 0
