@@ -1,0 +1,32 @@
+uuid: 1f452493-5664-48fb-b8c9-96d42c5c4b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.art_blocks
+  module:
+    - node
+    - views
+  theme:
+    - gt_custom
+id: gt_custom_views_block__art_blocks_block_genre
+theme: gt_custom
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:art_blocks-block_genre'
+settings:
+  id: 'views_block:art_blocks-block_genre'
+  label: 'You might also be interested in'
+  label_display: visible
+  provider: views
+  views_label: 'You might also be interested in'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      art_installation: art_installation

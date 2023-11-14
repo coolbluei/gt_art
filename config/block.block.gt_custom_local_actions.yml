@@ -1,0 +1,20 @@
+uuid: c476b34c-fa8f-4e01-9e53-0ae8a34a8709
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gt_custom
+_core:
+  default_config_hash: qichMVqUs3UKL_m7FVJZtUUdioJM2WaPzvRhgDuQRyA
+id: gt_custom_local_actions
+theme: gt_custom
+region: utility_navigation
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

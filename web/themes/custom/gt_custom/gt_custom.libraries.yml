@@ -1,0 +1,18 @@
+parent:
+  version: VERSION
+  css:
+    theme:
+      css/parent.css:
+        weight: -10
+custom_style:
+  version: VERSION
+  css:
+    theme:
+      css/custom_style.css:
+        weight: -10
+art:
+  version: VERSION
+  css:
+    theme:
+      templates/node/art-installation.css:
+        weight: -10

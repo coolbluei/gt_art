@@ -1,0 +1,22 @@
+uuid: 4e6b5222-53fa-434e-9f08-a1e329a8540b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gt_custom
+_core:
+  default_config_hash: Hs_tdvAFlvTclXGduXSuamkNPjuWi3Zk37vpuTT3v60
+id: gt_custom_messages
+theme: gt_custom
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: eb6d738d-041b-41a0-8a2a-62924cc39936
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - gt_custom
+_core:
+  default_config_hash: Me-8yXMyPCwLxBJ_MERMZzJxOzmJSr_laCAhMmUZcEM
+id: gt_custom_tools
+theme: gt_custom
+region: other
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

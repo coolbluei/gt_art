@@ -1,0 +1,20 @@
+uuid: d78c2a0f-b6a2-4152-9896-ea27b1a0c319
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_tools
+  theme:
+    - gt_custom
+id: gt_custom_footer_logo
+theme: gt_custom
+region: footer_08
+weight: 0
+provider: null
+plugin: gt_footer_logo_block
+settings:
+  id: gt_footer_logo_block
+  label: 'GT gold footer: logo (required)'
+  label_display: '0'
+  provider: gt_tools
+visibility: {  }
