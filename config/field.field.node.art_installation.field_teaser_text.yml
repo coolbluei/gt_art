@@ -1,0 +1,19 @@
+uuid: 10d99deb-ceb5-401b-bea9-58b15b20dfde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.art_installation
+id: node.art_installation.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: art_installation
+label: 'Teaser Text'
+description: 'This text will appear in lists.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

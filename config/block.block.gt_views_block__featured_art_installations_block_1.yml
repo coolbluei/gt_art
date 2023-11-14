@@ -1,0 +1,29 @@
+uuid: f15b31d0-02d7-4eba-87bb-5be5f8bed96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_art_installations
+  module:
+    - system
+    - views
+  theme:
+    - gt
+id: gt_views_block__featured_art_installations_block_1
+theme: gt
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:featured_art_installations-block_1'
+settings:
+  id: 'views_block:featured_art_installations-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

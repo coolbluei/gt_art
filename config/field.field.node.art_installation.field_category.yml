@@ -10,7 +10,7 @@ id: node.art_installation.field_category
 field_name: field_category
 entity_type: node
 bundle: art_installation
-label: Category
+label: Genre
 description: ''
 required: false
 translatable: false
