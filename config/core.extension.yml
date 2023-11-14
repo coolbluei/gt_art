@@ -61,6 +61,7 @@ module:
   phpass: 0
   quickedit: 0
   rdf: 0
+  safe_field_getter: 0
   shortcut: 0
   social_media_links: 0
   system: 0
