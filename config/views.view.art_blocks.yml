@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.teaser
     - node.type.art_installation
     - taxonomy.vocabulary.art_categories
   module:
@@ -243,7 +243,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: card
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -253,7 +253,18 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<h3>You might also be interested in</h3>'
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:

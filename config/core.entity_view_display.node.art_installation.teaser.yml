@@ -1,6 +1,6 @@
 uuid: d27ae3c8-8427-47f3-896b-7fd6100b636f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -10,27 +10,33 @@ dependencies:
     - field.field.node.art_installation.field_teaser_text
     - node.type.art_installation
   module:
-    - text
+    - field_formatter_class
     - user
 id: node.art_installation.teaser
 targetEntityType: node
 bundle: art_installation
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_category:
+    type: entity_reference_label
     label: hidden
     settings:
-      trim_length: 600
+      link: true
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
     region: content
 hidden:
-  field_category: true
-  field_media: true
+  body: true
   field_teaser_text: true
+  links: true

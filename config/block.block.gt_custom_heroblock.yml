@@ -1,0 +1,28 @@
+uuid: 8dc9fd2b-e8b1-4a66-99e0-f6161d02fbb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - cbi_art_hero
+    - node
+  theme:
+    - gt_custom
+id: gt_custom_heroblock
+theme: gt_custom
+region: banner
+weight: 0
+provider: null
+plugin: hero_block
+settings:
+  id: hero_block
+  label: 'Hero block'
+  label_display: '0'
+  provider: cbi_art_hero
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      art_installation: art_installation

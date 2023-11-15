@@ -332,4 +332,18 @@
     display: block;
   }
 }
+
+.cbi-hero-block .text {
+  color: white;
+}
+.cbi-hero-block .chb-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 2em 0;
+}
+.cbi-hero-block .chb-content-wrapper .text {
+  display: flex;
+  flex-direction: column;
+}
+
 /* EOF to help git */

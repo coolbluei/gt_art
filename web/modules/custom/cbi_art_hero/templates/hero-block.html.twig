@@ -1,10 +1,11 @@
-<div class="banner-wrapper black">
-  <div class="row g-0 align-items-center" style="padding: 2em;">
-    <div class="banner-text-wrapper black col-md-12 col-lg-5 order-2 order-lg-1 p-5">
-
-      <h2 class="display-4">{{ title }}</h2>
+<div class="banner-wrapper black cbi-hero-block">
+  <div class="chb-content-wrapper">
+    <div class="image">
+      {{ image }}
     </div>
-    <div class="d-flex align-items-center col-md-12 col-lg-7 p-0 order-1 order-lg-2">
+    <div class="text">
+      <h2>{{ title }}</h2>
+      <div class="genre">Genre: {{ genre }}</div>
       <div class="abstract">{{ abstract }}</div>
     </div>
   </div>

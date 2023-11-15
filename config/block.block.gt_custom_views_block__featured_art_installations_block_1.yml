@@ -12,7 +12,7 @@ dependencies:
 id: gt_custom_views_block__featured_art_installations_block_1
 theme: gt_custom
 region: content
-weight: 0
+weight: -9
 provider: null
 plugin: 'views_block:featured_art_installations-block_1'
 settings:

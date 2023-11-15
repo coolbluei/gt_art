@@ -1,64 +1,9 @@
-.course-descriptions {
-  padding: 1em;
-  background-color: #efefef;
-}
-.course-descriptions > h2 {
-  background-color: #EEB211;
-  color: #454545;
-  margin-bottom: 6px;
-  padding: 10px;
-}
-.course-descriptions > div {
-  padding: 1em;
-  background-color: #e6e6e6;
+.gt-container.container {
+  margin-bottom: 1em;
 }
 
-.highlight-link-blue a,.highlight-link-yellow a {
-  box-shadow: 0 3px 3px rgba(0,0,0,0.3);
-  display: inline-block;
-  font-weight: 700;
-  padding: 10px 14px 10px 36px;
-  position: relative;
-  vertical-align: bottom;
+.views-element-container nav {
+  margin-top: 1em;
 }
 
-.highlight-link-blue a,.highlight-link-yellow a {
-  box-shadow: 0 3px 3px rgba(0,0,0,0.3);
-  display: inline-block;
-  font-weight: 700;
-  padding: 10px 14px 10px 36px;
-  position: relative;
-  vertical-align: bottom;
-}
-.highlight-link-blue a:before,.highlight-link-yellow a:before {
-  content: "\f138";
-  display: inline-block;
-  font-family: 'FontAwesome';
-  font-size: 1.5em;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-}
-
-.highlight-link-blue a:before {
-  color: #EEB211;
-}
-
-.highlight-link-yellow a:before {
-  color: #023D7B;
-}
-
-body .highlight-link-blue a {
-  color: #fff;
-  background-color: #023D7B;
-}
-
-body .highlight-link-yellow a {
-  color: #ffffff;
-  background-color: #EEB211;
-}
-
-.highlight-link-yellow a:before {
-  color: #023D7B;
-}
-
+/* EOF for git */
