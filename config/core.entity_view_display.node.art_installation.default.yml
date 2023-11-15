@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.art_installation.field_teaser_text
     - node.type.art_installation
   module:
+    - field_formatter_class
     - text
     - user
 id: node.art_installation.default
@@ -37,7 +38,9 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 2
     region: content
   field_teaser_text:

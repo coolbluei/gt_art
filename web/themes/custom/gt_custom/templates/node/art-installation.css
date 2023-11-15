@@ -1,1 +1,48 @@
-/* EOF for git */
+.field--name-field-category .field__item {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+body div.main-container a.art-btn {
+  background: var(--gt-drk-gold);
+  color: var(--gt-white);
+  display: block;
+  width: 100%;
+}
+
+.views-view-responsive-grid__item {
+  align-content: stretch;
+}
+.views-view-responsive-grid__item-inner {
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  height: 100%;
+  overflow: hidden;
+}
+
+article.node--view-mode-card {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+article.node--view-mode-card .art-ins-text {
+  padding: 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+article.node--view-mode-card h2 {
+  margin: 0 0 1em 0;
+}
+article.node--view-mode-card h2 a {
+  text-decoration: none;
+  color: var(--gt-navy);
+  font-size: 1.5rem;
+}
+
+article.node--view-mode-card .view-button {
+
+}
+
+/* EOF for git */

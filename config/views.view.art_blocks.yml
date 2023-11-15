@@ -93,7 +93,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 6
+          items_per_page: 2
       exposed_form:
         type: basic
         options:
@@ -113,22 +113,19 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          plugin_id: random
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments:
         tid:
           id: tid
@@ -237,10 +234,10 @@ display:
       style:
         type: grid_responsive
         options:
-          grouping: {  }
-          columns: 3
-          cell_min_width: 100
-          grid_gutter: 10
+          uses_fields: false
+          columns: 2
+          cell_min_width: 300
+          grid_gutter: 30
           alignment: horizontal
       row:
         type: 'entity:node'
@@ -260,7 +257,7 @@ display:
       footer: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -277,7 +274,7 @@ display:
       display_extenders: {  }
       block_description: 'Genre Block'
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

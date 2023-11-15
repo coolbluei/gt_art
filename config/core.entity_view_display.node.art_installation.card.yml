@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.art_installation.field_teaser_text
     - node.type.art_installation
   module:
+    - field_formatter_class
     - layout_builder
     - user
 third_party_settings:
@@ -23,19 +24,23 @@ mode: card
 content:
   field_category:
     type: entity_reference_label
-    label: hidden
+    label: inline
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 2
     region: content
   field_media:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: card
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: content
   field_teaser_text:
@@ -45,6 +50,10 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   body: true
-  links: true
