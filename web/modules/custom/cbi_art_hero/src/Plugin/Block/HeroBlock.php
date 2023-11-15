@@ -1,9 +1,11 @@
 <?php
 
-namespace Drupal\cbi_hero_banner\Plugin\Block;
+namespace Drupal\cbi_art_hero\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\node\NodeInterface;
 use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\safe_field_getter\SafeFieldGetter;
 
 /**
  * Provides a Hero Block.
@@ -24,29 +26,16 @@ class HeroBlock extends BlockBase
 		$output = [];
 
 		$node = \Drupal::routeMatch()->getParameter('node');
-		if ($node instanceof \Drupal\node\NodeInterface) {
-			$has_field_hero_banner = $node->hasField('field_hero_banner');
-			if ($has_field_hero_banner) {
-				$paragraphs = $node->field_hero_banner->referencedEntities();
+		if ($node instanceof NodeInterface) {
+      $output['data'] = [
+        'title' => $node->getTitle(),
+        'abstract' => SafeFieldGetter::firstSimple($node, 'field_teaser', 'no teaser'),
+      ];
 
-				$has_paragraph = count($paragraphs) > 0;
-				if ($has_paragraph) {
-					/**
-					 * @var Paragraph hero_paragraph
-					 */
-					$hero_paragraph = $paragraphs[0];
+      $output['#theme'] = 'hero_block';
 
-					$builder = \Drupal::entityTypeManager()->getViewBuilder('paragraph');
-          $output = [
-            '#type' => 'markup',
-            '#markup' => '<p>Nothing</p>',
-          ];
-				}
-			}
+      $output['#attached']['library'][] = 'cbi_art_hero/hero_styles';
 		}
-
-		$output['#attached']['library'][] = 'cbi_hero_banner/hero_styles';
-
 		return $output;
 	}
 }
