@@ -1,0 +1,6 @@
+hero_styles:
+  version: VERSION
+  css:
+    theme:
+      css/hero_styles.css:
+        weight: -10

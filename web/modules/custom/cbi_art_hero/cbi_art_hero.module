@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cbi_art_hero_theme() {
+  return [
+    'hero_block' => [
+      'template' => 'block--arts-header',
+      'variables' => [
+        'image' => [],
+        'title' => [],
+        'abstract' => [],
+      ],
+    ],
+    'paragraph__image_with_text' => [
+      'template' => 'paragraph--image-with-text',
+      'base hook' => 'paragraph'
+    ]
+  ];
+}
