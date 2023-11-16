@@ -32,8 +32,11 @@ class HeroBlock extends BlockBase
         '#image' => $this->getRenderedMedia($node),
         '#title' => $node->getTitle(),
         '#abstract' => SafeFieldGetter::firstSimple($node, 'field_teaser_text', 'no teaser'),
-        '#genre' => $this->getListOfGenre($node),
+
       ];
+      if ($node->hasField('field_category')) {
+        $output['#genre'] = $node->field_category->view('card');
+      }
 
       $output['#theme'] = 'hero_block';
 
@@ -49,19 +52,6 @@ class HeroBlock extends BlockBase
       return [];
     }
     $builder = \Drupal::entityTypeManager()->getViewBuilder('media');
-    return $builder->view($media, 'default');
+    return $builder->view($media, 'card');
   }
-
-  protected function getListOfGenre(NodeInterface $node): array{
-    $genres = SafeFieldGetter::allReferences($node, 'field_categories', NULL);
-    if (empty($genres)) {
-      return [];
-    }
-    $results = [];
-    foreach ($genres as $genre) {
-      // Build a new item. @todo
-    }
-    return $results;
-  }
-
 }

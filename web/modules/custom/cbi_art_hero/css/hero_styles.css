@@ -339,11 +339,21 @@
 .cbi-hero-block .chb-content-wrapper {
   display: flex;
   flex-direction: row;
-  padding: 2em 0;
 }
 .cbi-hero-block .chb-content-wrapper .text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 2em;
 }
 
+.cbi-hero-block .image {
+  width: 50%;
+}
+.cbi-hero-block .image .field--name-field-media-image .field__item {
+  width: 100%;
+}
+.cbi-hero-block .image .field--name-field-media-image .field__item img {
+}
 /* EOF to help git */
