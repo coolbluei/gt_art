@@ -41,6 +41,7 @@ class HeroBlock extends BlockBase
       $output['#theme'] = 'hero_block';
 
       $output['#attached']['library'][] = 'cbi_art_hero/hero_styles';
+      $output['#cache']['tags'][] = 'node:' . $node->id();
 		}
 		return $output;
 	}
