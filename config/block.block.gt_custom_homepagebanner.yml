@@ -1,0 +1,30 @@
+uuid: 5ee6d6a0-a79a-4bd5-857e-ada6e56e71e1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:88a915fb-cdb4-4ccf-ab66-d732df568aa9'
+  module:
+    - block_content
+    - system
+  theme:
+    - gt_custom
+id: gt_custom_homepagebanner
+theme: gt_custom
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:88a915fb-cdb4-4ccf-ab66-d732df568aa9'
+settings:
+  id: 'block_content:88a915fb-cdb4-4ccf-ab66-d732df568aa9'
+  label: 'Homepage Banner'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
