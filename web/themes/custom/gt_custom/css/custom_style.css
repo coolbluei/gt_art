@@ -1,9 +1,40 @@
+a.arrow-link {
+  border: 1px solid var(--gt-navy);
+  color: var(--gt-navy);
+  padding: 1em 4em 1em 1em;
+  display: inline-block;
+  position: relative;
+  background-image: url('/themes/custom/gt_custom/images/cil_arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+}
+
+a.arrow-link:hover {
+  background-color: #f0f0f0;
+}
+
+
 .gt-container.container {
   margin-bottom: 1em;
 }
 
 .views-element-container nav {
   margin-top: 1em;
+}
+
+#views-exposed-form-art-installations-page-1 {
+  margin: 1em 0;
+}
+
+#views-exposed-form-art-installations-page-1 .form-checkboxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#views-exposed-form-art-installations-page-1 .js-form-type-checkbox {
+  width: 20%;
+  min-width: 200px;
 }
 
 /* EOF for git */

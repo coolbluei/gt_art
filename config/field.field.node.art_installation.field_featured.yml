@@ -1,0 +1,21 @@
+uuid: f36d2d4e-55cc-47cc-b19f-d4cb1722e73f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.art_installation
+id: node.art_installation.field_featured
+field_name: field_featured
+entity_type: node
+bundle: art_installation
+label: Featured
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

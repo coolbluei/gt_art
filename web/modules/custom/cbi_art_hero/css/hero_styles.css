@@ -89,7 +89,7 @@
 
 @media (max-width: 960px) {
   .cbi-hero-block .chb-content-wrapper {
-    font-style: 0.8em;
+    font-size: 0.8em;
   }
   .cbi-hero-block .chb-content-wrapper h1 {
     font-size: 2.0rem;
