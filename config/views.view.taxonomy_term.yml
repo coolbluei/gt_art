@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card
   module:
     - node
     - taxonomy
@@ -207,16 +207,18 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid_responsive
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          columns: 3
+          cell_min_width: 300
+          grid_gutter: 30
+          alignment: horizontal
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: card
       query:
         type: views_query
         options:
@@ -242,7 +244,18 @@ display:
           view_mode: full
           tokenize: true
           bypass_access: false
-      footer: {  }
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<p class="text-center my-3"><a class="btn art-btn display-inline" href="/art-installations">View All</a></p>'
+          tokenize: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

@@ -8,6 +8,10 @@ body div.main-container a.art-btn {
   display: block;
   width: 100%;
 }
+body div.main-container a.art-btn.display-inline {
+  display: inline;
+  margin: 1em 0;
+}
 
 .views-view-responsive-grid__item {
   align-content: stretch;
