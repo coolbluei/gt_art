@@ -37,4 +37,16 @@ a.arrow-link:hover {
   min-width: 200px;
 }
 
+#views-exposed-form-art-installations-page-1  .form-actions input{
+  background-color: var(--gt-gold);
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+}
+
+ul.pagination .active>.page-link,
+ul.pagination .page-link.active {
+  background-color: var(--gt-gold);
+}
+
 /* EOF for git */
