@@ -29,6 +29,11 @@ class HeroBlock extends BlockBase
 
 		$node = \Drupal::routeMatch()->getParameter('node');
 		if ($node instanceof NodeInterface) {
+      // Watch for flag to build Hero.  Skip if missing.
+      if (!SafeFieldGetter::firstBoolean($node, 'field_use_hero_block', FALSE)) {
+        // No hero for you.
+        return [];
+      }
       $output = [
         '#image' => $this->getRenderedMedia($node),
         '#title' => $node->getTitle(),

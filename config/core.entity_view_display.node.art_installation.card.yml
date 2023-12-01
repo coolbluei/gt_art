@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.art_installation.field_featured
     - field.field.node.art_installation.field_media
     - field.field.node.art_installation.field_teaser_text
+    - field.field.node.art_installation.field_use_hero_block
     - node.type.art_installation
   module:
     - field_formatter_class
@@ -59,3 +60,4 @@ content:
 hidden:
   body: true
   field_featured: true
+  field_use_hero_block: true
