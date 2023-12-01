@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:88a915fb-cdb4-4ccf-ab66-d732df568aa9'
 settings:
   id: 'block_content:88a915fb-cdb4-4ccf-ab66-d732df568aa9'
-  label: 'Homepage Banner'
+  label: 'Creating at the Intersection of Art & Technology'
   label_display: visible
   provider: block_content
   status: true

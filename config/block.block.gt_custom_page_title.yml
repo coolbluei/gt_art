@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - system
   theme:
     - gt_custom
 _core:
@@ -20,18 +20,7 @@ settings:
   label_display: '0'
   provider: core
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      article: article
-      hg_boilerplate: hg_boilerplate
-      hg_event: hg_event
-      hg_external_news: hg_external_news
-      hg_image: hg_image
-      hg_news: hg_news
-      hg_profile: hg_profile
-      hg_video: hg_video
-      page: page
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/art-installation/*'

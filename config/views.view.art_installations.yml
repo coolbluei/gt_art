@@ -281,9 +281,10 @@ display:
       path: art-installations
       menu:
         type: normal
-        title: 'Art Installations'
+        title: 'All Art & Installations'
         description: ''
-        weight: -49
+        weight: -47
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''

@@ -20,7 +20,7 @@ mode: teaser
 content:
   field_category:
     type: entity_reference_label
-    label: hidden
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
