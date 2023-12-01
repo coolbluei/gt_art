@@ -1,0 +1,22 @@
+uuid: 6f5c35d8-12c7-4fad-a41e-ee31efd97c5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: art_installations
+label: 'Art Installations'
+type: 'canonical_entities:node'
+pattern: 'art-installation/[node:title]'
+selection_criteria:
+  f449e03a-ae26-45ec-97e0-1f93bd3f99e8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f449e03a-ae26-45ec-97e0-1f93bd3f99e8
+    context_mapping:
+      node: node
+    bundles:
+      art_installation: art_installation
+selection_logic: and
+weight: -5
+relationships: {  }

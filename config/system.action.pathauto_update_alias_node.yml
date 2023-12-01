@@ -1,12 +1,12 @@
-uuid: 214f608e-4dc6-44be-ad16-cabd236d9518
+uuid: 821cca30-2c70-4408-a9dd-732a35258b86
 langcode: en
 status: true
 dependencies:
+  module:
+    - pathauto
   enforced:
     module:
       - node
-  module:
-    - pathauto
 _core:
   default_config_hash: lno8QThS348UX-kaUsagJtCnuPHKLXYnTQiF_9HSDWA
 id: pathauto_update_alias_node
