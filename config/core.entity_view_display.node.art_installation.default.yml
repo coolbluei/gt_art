@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.art_installation.field_featured
     - field.field.node.art_installation.field_media
     - field.field.node.art_installation.field_teaser_text
-    - field.field.node.art_installation.field_use_hero_block
     - node.type.art_installation
   module:
     - text
@@ -30,5 +29,4 @@ hidden:
   field_featured: true
   field_media: true
   field_teaser_text: true
-  field_use_hero_block: true
   links: true
