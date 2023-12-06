@@ -52,3 +52,18 @@ function gt_custom_preprocess_block(&$variables) {
         }
     }
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function gt_custom_preprocess_layout__onecol(&$variables) {
+  if (!isset($variables['content']['#settings']['label'])) {
+    // No label, skip work.
+    return;
+  }
+  $label = $variables['content']['#settings']['label'];
+  if (!empty($label)) {
+    // make sure its class friendly
+    $variables['attributes']['class'][] = str_replace(' ', '-', strtolower($label));
+  }
+}

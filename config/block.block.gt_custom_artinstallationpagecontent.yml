@@ -1,0 +1,30 @@
+uuid: 86361a18-5dce-4dd9-b2ff-ca4f962326da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1a172b29-90af-44dd-9225-084dd45a9fe9'
+  module:
+    - block_content
+    - system
+  theme:
+    - gt_custom
+id: gt_custom_artinstallationpagecontent
+theme: gt_custom
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:1a172b29-90af-44dd-9225-084dd45a9fe9'
+settings:
+  id: 'block_content:1a172b29-90af-44dd-9225-084dd45a9fe9'
+  label: 'Art Installation Page Content'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /art-installations

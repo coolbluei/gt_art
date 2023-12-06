@@ -47,6 +47,37 @@ a.arrow-link:hover {
 ul.pagination .active>.page-link,
 ul.pagination .page-link.active {
   background-color: var(--gt-gold);
+  border-color: var(--gt-gray);
 }
+.field--name-field-category .field__item a {
+  text-decoration: underline;
+  font-weight: normal;
+}
+.field--name-field-category .field__item a:hover {
+  color: var(--gt-gold);
+}
+
+.field--name-field-category .field__items > .field__item::after {
+  content: ",";
+}
+.field--name-field-category .field__items > .field__item:last-child::after {
+  content: "";
+}
+
+.banner-section .layout__region--content .field_block.title {
+    background: var(--gt-black);
+    background-image: url('../images/stripes-bg.svg');
+    background-repeat: repeat;
+    background-size: auto .9rem;
+    overflow: hidden;
+}
+.banner-section .field_block.title {
+  padding: 50px 15px 30px;
+  font-family: var(--font-roboto-condensed);
+  font-size: 34px;
+  color: var(--gt-white);
+  font-weight: 700;
+}
+
 
 /* EOF for git */

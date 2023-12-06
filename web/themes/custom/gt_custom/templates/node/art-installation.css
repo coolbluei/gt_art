@@ -29,7 +29,7 @@ article.art-inst-custom {
   height: 100%;
 }
 article.art-inst-custom .art-ins-text {
-  padding: 1em;
+  padding: 1em 1em 2em 1em;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,8 @@ article.art-inst-custom h2 {
 article.art-inst-custom h2 a {
   text-decoration: none;
   color: var(--gt-navy);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  line-height: 1.2;
 }
 article.art-inst-custom .field--name-field-category {
   flex-grow: 1;
@@ -50,6 +51,10 @@ article.art-inst-custom .field--name-field-category {
 
 article.art-inst-custom .view-button {
 
+}
+article.art-inst-custom  .field--name-field-teaser-text {
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 /* EOF for git */
