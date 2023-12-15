@@ -41,27 +41,6 @@ third_party_settings:
                     class: ''
             weight: 3
             additional: {  }
-          bd9d0121-8e3b-4e77-8b63-c4feeb978500:
-            uuid: bd9d0121-8e3b-4e77-8b63-c4feeb978500
-            region: content
-            configuration:
-              id: 'field_block:node:page:title'
-              label: Title
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings:
-                  field_formatter_class:
-                    class: ''
-            weight: 2
-            additional: {  }
           ef39e973-782b-44c6-adb0-db16c1055c82:
             uuid: ef39e973-782b-44c6-adb0-db16c1055c82
             region: content
