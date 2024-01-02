@@ -79,5 +79,8 @@ ul.pagination .page-link.active {
   font-weight: 700;
 }
 
+.video-embed-field-responsive-video {
+  aspect-ratio: 4/3;
+}
 
 /* EOF for git */
