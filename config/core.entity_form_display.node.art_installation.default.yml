@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.art_installation.field_category
     - field.field.node.art_installation.field_featured
     - field.field.node.art_installation.field_media
+    - field.field.node.art_installation.field_media_gallery
     - field.field.node.art_installation.field_teaser_text
     - node.type.art_installation
   module:
@@ -54,6 +55,13 @@ content:
   field_media:
     type: media_library_widget
     weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_media_gallery:
+    type: media_library_widget
+    weight: 26
     region: content
     settings:
       media_types: {  }

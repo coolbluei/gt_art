@@ -82,5 +82,23 @@ ul.pagination .page-link.active {
 .art-inst-custom .video-embed-field-responsive-video {
   aspect-ratio: 4/3;
 }
+.field--name-field-media-gallery > .field__items {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .field--name-field-media-gallery .field__items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .field--name-field-media-gallery .field__items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /* EOF for git */

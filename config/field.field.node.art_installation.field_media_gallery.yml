@@ -1,0 +1,31 @@
+uuid: cd3ebaad-ab61-4e6c-b1a2-42cbfd18e4ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_gallery
+    - media.type.image
+    - media.type.video_embed
+    - node.type.art_installation
+id: node.art_installation.field_media_gallery
+field_name: field_media_gallery
+entity_type: node
+bundle: art_installation
+label: Gallery
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video_embed: video_embed
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
