@@ -1,0 +1,36 @@
+uuid: 2d39fe06-061e-4560-9071-77cd5e27a576
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card
+    - field.field.media.file_upload.field_media_file
+    - media.type.file_upload
+  module:
+    - field_formatter_class
+    - file
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.file_upload.card
+targetEntityType: media
+bundle: file_upload
+mode: card
+content:
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

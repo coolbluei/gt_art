@@ -1,17 +1,17 @@
-uuid: 96a684c9-4092-4487-a69d-7bacc686e3c2
+uuid: 5ef627bd-4663-4af1-81a5-fbd1b18d7665
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.video_embed.field_media_video_embed_field
+    - field.field.media.file_upload.field_media_file
     - image.style.medium
-    - media.type.video_embed
+    - media.type.file_upload
   module:
     - image
-id: media.video_embed.media_library
+id: media.file_upload.media_library
 targetEntityType: media
-bundle: video_embed
+bundle: file_upload
 mode: media_library
 content:
   thumbnail:
@@ -27,6 +27,6 @@ content:
     region: content
 hidden:
   created: true
-  field_media_video_embed_field: true
+  field_media_file: true
   name: true
   uid: true

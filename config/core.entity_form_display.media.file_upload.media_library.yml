@@ -1,14 +1,14 @@
-uuid: 5b0575d7-ace7-44fd-ab56-fee39107e546
+uuid: 4fb34744-44d3-4436-bfc2-5a62f881487b
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
-    - field.field.media.video_embed.field_media_video_embed_field
-    - media.type.video_embed
-id: media.video_embed.media_library
+    - field.field.media.file_upload.field_media_file
+    - media.type.file_upload
+id: media.file_upload.media_library
 targetEntityType: media
-bundle: video_embed
+bundle: file_upload
 mode: media_library
 content:
   name:
@@ -21,7 +21,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_video_embed_field: true
+  field_media_file: true
   path: true
   status: true
   uid: true

@@ -1,16 +1,16 @@
-uuid: 5d64d9d0-378f-4ca8-8f6f-9afab8c09d98
+uuid: 6765c9ab-f60e-46bd-9475-98095eb52770
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.video_embed.field_media_video_embed_field
-    - media.type.video_embed
+    - field.field.media.file_upload.field_media_file
+    - media.type.file_upload
   module:
+    - file
     - path
-    - video_embed_field
-id: media.video_embed.default
+id: media.file_upload.default
 targetEntityType: media
-bundle: video_embed
+bundle: file_upload
 mode: default
 content:
   created:
@@ -19,11 +19,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_video_embed_field:
-    type: video_embed_field_textfield
+  field_media_file:
+    type: file_generic
     weight: 0
     region: content
-    settings: {  }
+    settings:
+      progress_indicator: throbber
     third_party_settings: {  }
   name:
     type: string_textfield

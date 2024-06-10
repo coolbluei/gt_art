@@ -58,5 +58,6 @@ filters:
         card: card
         full: full
       allowed_media_types:
+        file_upload: file_upload
         image: image
         video_embed: video_embed
