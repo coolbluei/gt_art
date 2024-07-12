@@ -11,10 +11,10 @@ name: juicebox_square_thumb
 label: 'Juicebox Square Thumbnail (85x85)'
 effects:
   17b2a910-8c6f-11e3-baa8-0800200c9a66:
-    uuid: 17b2a910-8c6f-11e3-baa8-0800200c9a66
     id: image_scale
-    weight: 0
     data:
       width: 85
       height: 85
       upscale: false
+    weight: 0
+    uuid: 17b2a910-8c6f-11e3-baa8-0800200c9a66

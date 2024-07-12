@@ -67,3 +67,19 @@ function gt_custom_preprocess_layout__onecol(&$variables) {
     $variables['attributes']['class'][] = str_replace(' ', '-', strtolower($label));
   }
 }
+/**
+ * Implements hook_preprocess_field().
+ */
+function gt_custom_preprocess_field(array &$variables, $hook) {
+  if (isset ($variables['element']['#field_name'])) {
+    $variables['attributes']['class'][] = 'field-name-' . _gt_custom_class_string($variables['element']['#field_name']);
+  }
+  if (isset ($variables['element']['#field_type'])) {
+    $variables['attributes']['class'][] = 'field-type-' . _gt_custom_class_string($variables['element']['#field_type']);
+  }
+  $variables['attributes']['class'][] = 'field';
+}
+
+function _gt_custom_class_string(mixed $element) {
+  return str_replace(['_', ' '], '-', $element);
+}

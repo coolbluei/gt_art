@@ -51,6 +51,7 @@
         "drupal/juicebox": "^4.0@alpha",
         "drupal/layout_builder_modal": "^1.1",
         "drupal/layout_builder_restrictions": "^2.7",
+        "drupal/media_entity_download": "^2.3",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/paragraphs": "^1.16",

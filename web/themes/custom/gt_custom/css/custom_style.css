@@ -89,6 +89,10 @@ ul.pagination .page-link.active {
   grid-gap: 30px;
 }
 
+article.node div.field {
+  margin-bottom: 1em;
+}
+
 @media (min-width: 768px) {
   .field--name-field-media-gallery .field__items {
     grid-template-columns: 1fr 1fr;

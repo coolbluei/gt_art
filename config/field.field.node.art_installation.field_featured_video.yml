@@ -1,16 +1,16 @@
-uuid: cd3ebaad-ab61-4e6c-b1a2-42cbfd18e4ec
+uuid: 59f84840-2ec2-428e-af70-1385b0e24ef3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_media_gallery
-    - media.type.image
+    - field.storage.node.field_featured_video
+    - media.type.video_embed
     - node.type.art_installation
-id: node.art_installation.field_media_gallery
-field_name: field_media_gallery
+id: node.art_installation.field_featured_video
+field_name: field_featured_video
 entity_type: node
 bundle: art_installation
-label: Gallery
+label: 'Featured Video'
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      video_embed: video_embed
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: image
+    auto_create_bundle: ''
 field_type: entity_reference
